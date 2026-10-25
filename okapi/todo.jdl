@@ -1,0 +1,11 @@
+/**
+ * The core data model for the sample application.
+ * Import this file again with `jhipster jdl todo.jdl` if you want to
+ * regenerate the entity after changing it.
+ */
+entity Task {
+  title String required minlength(1) maxlength(120),
+  notes String maxlength(2000),
+  dueDate LocalDate,
+  completed Boolean required
+}

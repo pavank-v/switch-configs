@@ -1,0 +1,23 @@
+[mgr]
+show_hidden = false
+sort_by = "natural"
+sort_reverse = false
+sort_dir_first = true
+linemode = "icon"
+ratio = [2, 4, 4]
+
+[mgr.history]
+enabled = true
+max = 2000
+
+[preview]
+max_width = 1200
+max_height = 1200
+tab_width = 2
+
+[opener]
+[[opener.edit]]
+run = 'nvim'
+block = true
+desc = "Edit with Neovim"
+for = "unix"

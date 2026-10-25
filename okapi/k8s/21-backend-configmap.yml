@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+  name: backend-config
+  namespace: okapi
+  labels:
+    app.kubernetes.io/name: backend
+    app.kubernetes.io/part-of: okapi
+    app.kubernetes.io/component: api
+
+data:
+  SPRING_PROFILES_ACTIVE: "prod"
+  SPRING_DATASOURCE_URL: "jdbc:postgresql://postgres:5432/todoapp"
+  APPLICATION_REGISTRATION_AUTO_ACTIVATE: "true"

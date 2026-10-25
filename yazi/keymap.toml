@@ -1,0 +1,6 @@
+[keymap.manager]
+"gg" = "first"
+"G" = "last"
+"/" = "search"
+"." = "hidden"
+"P" = "preview"
